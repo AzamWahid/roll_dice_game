@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll a Dice Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid mainDiv">
+
+        <div class="gameArea">
+            <div class="userArea playBody1 active">
+                <h1 id="player1Name">Player 1</h1>
+                <p id="Player1Score" class="totalScore">0</p>
+
+                <div class="currScoreArea">
+                    <h3>Current</h3>
+                    <p id="Player1CurrScore" class="currScore">0</p>
+                </div>
+            </div>
+            <div class="userArea playBody2">
+                <h1 id="player2Name">Player 2</h1>
+                <p id="Player2Score" class="totalScore">0</p>
+                <div class="currScoreArea">
+                    <h3>Current</h3>
+                    <p id="Player2CurrScore" class="currScore">0</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
