@@ -22,13 +22,15 @@ body {
     justify-content: center;
     background-color: #c7a2c7;
     margin: auto;
+    position: relative;
 }
 
 .active {
     background-color: white;
 }
 
-.playBody1,.playBody2 {
+.playBody1,
+.playBody2 {
     height: 100%;
 
 }
@@ -48,7 +50,7 @@ body {
 }
 
 .currScoreArea {
-    width: 40%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,6 +58,69 @@ body {
     background-color: #be3071;
     color: white;
 }
+
 .currScore {
     font-size: 30px;
 }
+
+.gameBtns {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+
+    padding: 5px;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.bottomBtn {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* media quries */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .gameArea {
+        width: 100%;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .gameArea {
+        width: 100%;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .gameArea {
+        width: 100%;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
